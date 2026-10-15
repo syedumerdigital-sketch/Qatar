@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sea Shell Restaurant | Authentic Qatar Seafood & BBQ</title>
+  <meta name="description" content="Sea Shell Restaurant (مطعم صدفة البحر) in Qatar. Fresh Arabian Gulf charcoal grilled BBQ fish, sizzling kebabs, grilled chicken, and Malabar authentic specialties. Order online or via WhatsApp." />
+  <meta property="og:title" content="Sea Shell Restaurant | Authentic Qatar Seafood & BBQ" />
+  <meta property="og:description" content="Taste the freshest charcoal grilled fish, kebabs, and authentic specialties in Qatar at Sea Shell Restaurant." />
+  <meta property="og:type" content="restaurant.restaurant" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            seashell: {
+              navy: '#090d16',
+              charcoal: '#0f172a',
+              card: '#141e33',
+              cardHover: '#1a2744',
+              gold: '#d97706',
+              goldLight: '#f59e0b',
+              goldGlow: 'rgba(217, 119, 6, 0.15)',
+              goldBorder: 'rgba(217, 119, 6, 0.25)',
+              muted: '#94a3b8',
+              border: '#1e293b'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Outfit"', 'sans-serif'],
+            arabic: ['"Noto Sans Arabic"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS for Luxury Dark Seafood Aesthetic -->
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    body {
+      background-color: #090d16;
+      color: #f8fafc;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Glassmorphism utility */
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card {
+      background: rgba(20, 30, 51, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .glass-card:hover {
+      border-color: rgba(217, 119, 6, 0.35);
+      background: rgba(26, 39, 68, 0.8);
+    }
+
+    /* Gold Ambient Glow */
+    .gold-glow {
+      box-shadow: 0 0 35px -5px rgba(217, 119, 6, 0.25);
+    }
+
+    .gold-glow-sm {
+      box-shadow: 0 0 15px -3px rgba(217, 119, 6, 0.3);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090d16;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #d97706;
+    }
+
+    /* Text Balance */
+    .text-balance {
+      text-wrap: balance;
+    }
+
+    /* Subtle image hover zoom */
+    .food-card-img {
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .food-card:hover .food-card-img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-amber-600 selection:text-white">
+
+  <!-- ========================================================== -->
+  <!-- 1. FIXED BLURRED GLASSMORPHISM NAVBAR                      -->
+  <!-- ========================================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
+      
+      <!-- Brand Logo Zone -->
+      <a href="#" class="flex items-center gap-3 group shrink-0">
+        <!-- Logo Emblem inspired by storefront sign -->
+        <div class="w-11 h-11 rounded-full bg-slate-900 border-2 border-amber-500/80 flex items-center justify-center p-1.5 shadow-lg shadow-amber-500/10 group-hover:border-amber-400 transition-colors">
+          <svg class="w-full h-full text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Seashell / chef hat icon combo -->
+            <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.5 1.4.5h8c.5 0 1-.2 1.4-.5 2.8-1.8 4.6-4.9 4.6-8.4 0-5.5-4.5-10-10-10z"></path>
+            <path d="M12 2v20"></path>
+            <path d="M17 5c-1.5 4-2.5 9-2.5 17"></path>
+            <path d="M7 5c1.5 4 2.5 9 2.5 17"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-baseline gap-1.5">
+            <span class="font-display font-extrabold text-lg sm:text-xl tracking-tight text-white group-hover:text-amber-400 transition-colors">
+              SEA SHELL
+            </span>
+            <span class="font-display font-semibold text-xs tracking-wider text-amber-400 uppercase">
+              RESTAURANT
+            </span>
+          </div>
+          <p class="font-arabic text-[11px] text-slate-400 leading-tight">مطعم صدفة البحر · قطر</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#hero" class="hover:text-amber-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-amber-500 after:transition-all">
+          Home
+        </a>
+        <a href="#special-bbq" class="hover:text-amber-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-amber-500 after:transition-all">
+          Special BBQ
+        </a>
+        <a href="#menu-section" class="hover:text-amber-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-amber-500 after:transition-all">
+          Digital Menu
+        </a>
+        <a href="#location" class="hover:text-amber-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-amber-500 after:transition-all">
+          Location
+        </a>
+        <a href="#contact" class="hover:text-amber-400 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-amber-500 after:transition-all">
+          Contact
+        </a>
+      </nav>
+
+      <!-- Action Buttons & Cart Zone -->
+      <div class="flex items-center gap-3 shrink-0">
+        
+        <!-- Direct WhatsApp Call CTA -->
+        <a href="https://wa.me/97431343625?text=Hello%20Sea%20Shell%20Restaurant,%20I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-600/30 transition-colors text-xs font-semibold whitespace-nowrap">
+          <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 1.771.82 2.791.82 3.181 0 5.767-2.587 5.767-5.766.001-3.181-2.585-5.766-5.767-5.766zm9.969 5.766c0 5.503-4.469 9.97-9.969 9.97-1.719 0-3.34-.438-4.764-1.217l-5.267 1.381 1.405-5.132c-.896-1.503-1.374-3.232-1.374-5.002 0-5.503 4.47-9.97 9.97-9.97 5.501 0 9.969 4.467 9.969 9.97z"/>
+          </svg>
+          <span>31343625</span>
+        </a>
+
+        <!-- Sticky Cart Button with Counter Badge -->
+        <button id="cart-toggle-btn" type="button" class="relative flex items-center gap-2 px-4 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium text-xs sm:text-sm shadow-lg shadow-amber-600/20 active:scale-95 transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+          </svg>
+          <span class="hidden sm:inline font-semibold">Your Cart</span>
+          
+          <!-- Live Counter Badge -->
+          <span id="cart-counter" class="inline-flex items-center justify-center min-w-5 h-5 px-1.5 text-xs font-bold text-slate-950 bg-amber-200 rounded-full tabular-nums">
+            0
+          </span>
+        </button>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle Navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobile-nav-panel" class="hidden md:hidden px-4 pt-2 pb-6 bg-slate-900/95 border-b border-slate-800 space-y-2">
+      <a href="#hero" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Home</a>
+      <a href="#special-bbq" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Special BBQ Fish</a>
+      <a href="#menu-section" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Digital Menu</a>
+      <a href="#location" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Location & Hours</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md text-sm font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">Contact Restaurant</a>
+      <a href="https://wa.me/97431343625" class="block px-3 py-2 rounded-md text-sm font-semibold text-emerald-400 bg-emerald-950/40 border border-emerald-800/50">
+        Order via WhatsApp (+974 31343625)
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Body Content -->
+  <main class="flex-grow pt-20">
+
+    <!-- ========================================================== -->
+    <!-- 2. HERO SECTION                                            -->
+    <!-- ========================================================== -->
+    <section id="hero" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden border-b border-slate-800/80">
+      
+      <!-- High-Quality Cinematic Hero Image Background -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/src/assets/images/hero_seafood_charcoal_bbq_1792050379191.jpg" 
+          alt="Charcoal Grilled BBQ Fish and Prawns at Sea Shell Restaurant Qatar" 
+          class="w-full h-full object-cover object-center scale-105 filter brightness-75 contrast-110"
+          loading="eager"
+        />
+        <!-- Dark Luxury Radial & Gradient Vignette Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/80 to-[#090d16]/50"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.1)_0%,transparent_70%)]"></div>
+      </div>
+
+      <!-- Hero Content Container -->
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        
+        <!-- Authentic Qatar Seafood & BBQ Pill Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-amber-500/40 text-amber-400 text-xs sm:text-sm font-medium mb-6 backdrop-blur-md shadow-lg shadow-amber-500/5">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span>Authentic Qatar Seafood & BBQ</span>
+          <span class="text-slate-500">·</span>
+          <span class="font-arabic">مطعم صدفة البحر</span>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold text-white tracking-tight leading-[1.1] mb-6 text-balance">
+          Taste the <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500">Ocean</span> &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-400 to-red-400">Charcoal Flavors</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 font-normal mb-10 leading-relaxed text-balance">
+          Fresh Gulf Hamour, Sheri, and Seabass grilled over glowing natural coals, sizzling chicken &amp; mutton kebabs, and traditional Malabar Beef Kizhi in Qatar.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+          <a href="#menu-section" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold text-sm tracking-wide shadow-xl shadow-amber-600/30 transition-all hover:scale-[1.02] active:scale-95">
+            <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+            <span>Explore Digital Menu</span>
+          </a>
+
+          <a href="https://wa.me/97431343625?text=Hello%20Sea%20Shell%20Restaurant,%20I%20would%20like%20to%20order%20from%20your%20menu" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 text-white font-semibold text-sm border border-slate-700 hover:border-emerald-500/60 shadow-lg transition-all hover:scale-[1.02] active:scale-95">
+            <svg class="w-5 h-5 text-emerald-400" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 1.771.82 2.791.82 3.181 0 5.767-2.587 5.767-5.766.001-3.181-2.585-5.766-5.767-5.766zm9.969 5.766c0 5.503-4.469 9.97-9.969 9.97-1.719 0-3.34-.438-4.764-1.217l-5.267 1.381 1.405-5.132c-.896-1.503-1.374-3.232-1.374-5.002 0-5.503 4.47-9.97 9.97-9.97 5.501 0 9.969 4.467 9.969 9.97z"/>
+            </svg>
+            <span>Order via WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Trust Highlights Strip -->
+        <div class="mt-14 pt-8 border-t border-slate-800/60 grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-white">Charcoal Fired</p>
+              <p class="text-[11px] text-slate-400">Authentic BBQ Smokiness</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-white">Daily Gulf Catch</p>
+              <p class="text-[11px] text-slate-400">Hamour, Sheri &amp; Seabass</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-white">11 AM – 1 AM</p>
+              <p class="text-[11px] text-slate-400">Lunch, Dinner &amp; Late Night</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-white">Al Shamal, Qatar</p>
+              <p class="text-[11px] text-slate-400">Takeaway &amp; Delivery</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 3. FEATURED SPECIAL BBQ FISH SPOTLIGHT                     -->
+    <!-- ========================================================== -->
+    <section id="special-bbq" class="py-16 bg-[#0c1220] border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400 mb-2">
+              <span class="w-6 h-px bg-amber-500"></span>
+              <span>Seashell Signature Selection</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-display font-bold text-white tracking-tight">
+              Fresh Arabian Gulf Charcoal BBQ Fish
+            </h2>
+            <p class="text-sm text-slate-400 mt-1 font-arabic">سمك مشوي على الفحم طازج يومياً حسب رغبتكم</p>
+          </div>
+          <div class="text-left md:text-right">
+            <span class="text-xs text-slate-400">Direct From Fish Market to Glowing Embers</span>
+          </div>
+        </div>
+
+        <!-- 2-Column Spotlight Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Image Display Card -->
+          <div class="lg:col-span-7 relative rounded-2xl overflow-hidden glass-card gold-glow-sm group">
+            <img 
+              src="/src/assets/images/dish_bbq_hamour_fish_1792050378819.jpg" 
+              alt="Hamour Charcoal BBQ Fish" 
+              class="w-full h-[380px] sm:h-[440px] object-cover food-card-img"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent"></div>
+            
+            <div class="absolute bottom-6 left-6 right-6">
+              <div class="flex items-center justify-between gap-4">
+                <div>
+                  <span class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Chef's Masterpiece</span>
+                  <h3 class="text-2xl font-display font-bold text-white">Hamour &amp; Seabass Charcoal Grill</h3>
+                  <p class="text-xs text-slate-300 mt-1 font-arabic">هامور مشوي و سيباس بتتبيلة صدفة البحر الخاصة</p>
+                </div>
+                <div class="text-right shrink-0">
+                  <span class="text-xs text-slate-400 block">Starting From</span>
+                  <span class="text-2xl font-bold font-display text-amber-400 tabular-nums">45 <span class="text-xs font-normal text-slate-300">QAR</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fish Selection Quick Specs from Photo -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <!-- Sheri Grill Item -->
+            <div class="p-4 rounded-xl glass-card flex items-center justify-between hover:border-amber-500/40 transition-colors">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-bold text-white text-base">Sheri Grill</h4>
+                  <span class="font-arabic text-xs text-slate-400">شعري مشوي</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">Tender Arabian reef fish marinated in lemon garlic and toasted spices.</p>
+              </div>
+              <div class="text-right shrink-0 pl-3">
+                <span class="text-base font-bold text-amber-400 tabular-nums">35 QAR</span>
+                <button class="add-to-cart-quick mt-1 block text-[11px] font-semibold text-amber-300 hover:text-white" 
+                  data-id="bbq-sheri" data-name="Sheri Grill (شعري مشوي)" data-price="35" data-category="Seafood & Fish">
+                  + Add
+                </button>
+              </div>
+            </div>
+
+            <!-- Seabass Grill Item -->
+            <div class="p-4 rounded-xl glass-card flex items-center justify-between hover:border-amber-500/40 transition-colors">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-bold text-white text-base">Seabass Grill</h4>
+                  <span class="font-arabic text-xs text-slate-400">سيباس مشوي</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">Buttery, delicate seabass with crisp skin and char-kissed herbs.</p>
+              </div>
+              <div class="text-right shrink-0 pl-3">
+                <span class="text-base font-bold text-amber-400 tabular-nums">45 QAR</span>
+                <button class="add-to-cart-quick mt-1 block text-[11px] font-semibold text-amber-300 hover:text-white" 
+                  data-id="bbq-seabass" data-name="Seabass Grill (سيباس مشوي)" data-price="45" data-category="Seafood & Fish">
+                  + Add
+                </button>
+              </div>
+            </div>
+
+            <!-- Hamour Grill Item -->
+            <div class="p-4 rounded-xl glass-card flex items-center justify-between hover:border-amber-500/40 transition-colors">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-bold text-white text-base">Hamour Grill</h4>
+                  <span class="font-arabic text-xs text-slate-400">هامور مشوي</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">The king of Qatari seafood. Thick, succulent white flakes basted in house glaze.</p>
+              </div>
+              <div class="text-right shrink-0 pl-3">
+                <span class="text-base font-bold text-amber-400 tabular-nums">55 QAR</span>
+                <button class="add-to-cart-quick mt-1 block text-[11px] font-semibold text-amber-300 hover:text-white" 
+                  data-id="bbq-hamour" data-name="Hamour Grill (هامور مشوي)" data-price="55" data-category="Seafood & Fish">
+                  + Add
+                </button>
+              </div>
+            </div>
+
+            <!-- King Fish Grill Item -->
+            <div class="p-4 rounded-xl glass-card flex items-center justify-between hover:border-amber-500/40 transition-colors">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h4 class="font-bold text-white text-base">King Fish Steak</h4>
+                  <span class="font-arabic text-xs text-slate-400">سمك مالك</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-0.5">Thick-cut king fish steak grilled with Malabar pepper and chili.</p>
+              </div>
+              <div class="text-right shrink-0 pl-3">
+                <span class="text-base font-bold text-amber-400 tabular-nums">40 QAR</span>
+                <button class="add-to-cart-quick mt-1 block text-[11px] font-semibold text-amber-300 hover:text-white" 
+                  data-id="bbq-kingfish" data-name="King Fish Steak (سمك مالك)" data-price="40" data-category="Seafood & Fish">
+                  + Add
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 4. CATEGORY FILTER TABS & DIGITAL MENU SECTION             -->
+    <!-- ========================================================== -->
+    <section id="menu-section" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400 mb-2">
+          <span class="w-6 h-px bg-amber-500"></span>
+          <span>Explore Authentic Menu</span>
+          <span class="w-6 h-px bg-amber-500"></span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight">
+          Our Curated Dishes &amp; Grills
+        </h2>
+        <p class="text-sm text-slate-400 mt-2">
+          All prices in Qatari Riyal (QAR). Prepared fresh to order with authentic spices.
+        </p>
+      </div>
+
+      <!-- 5. CATEGORY FILTER TABS (Interactive Filter Buttons) -->
+      <div class="flex items-center justify-center mb-12 overflow-x-auto pb-2 scrollbar-none">
+        <div class="inline-flex p-1.5 rounded-xl bg-slate-900 border border-slate-800 shadow-xl max-w-full">
+          
+          <button type="button" class="category-btn active px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all whitespace-nowrap bg-amber-600 text-slate-950 shadow-md" data-category="all">
+            All Items
+          </button>
+          
+          <button type="button" class="category-btn px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800" data-category="seafood">
+            Seafood &amp; Fish
+          </button>
+          
+          <button type="button" class="category-btn px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800" data-category="bbq">
+            BBQ &amp; Kebabs
+          </button>
+          
+          <button type="button" class="category-btn px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800" data-category="chicken">
+            Chicken Special
+          </button>
+          
+          <button type="button" class="category-btn px-4 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all whitespace-nowrap text-slate-400 hover:text-white hover:bg-slate-800" data-category="beverages">
+            Beverages
+          </button>
+
+        </div>
+      </div>
+
+      <!-- ========================================================== -->
+      <!-- 6. MENU CARDS GRID                                         -->
+      <!-- ========================================================== -->
+      <div id="dishes-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <!-- Card 1: Hamour Charcoal Grill (Seafood) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="seafood">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/dish_bbq_hamour_fish_1792050378819.jpg" 
+                alt="Hamour Charcoal BBQ Fish" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                BBQ Fish
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Hamour Grill
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">هامور مشوي</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Fresh local Gulf Hamour basted with garlic, lemon, cumin, and house seafood spice mix.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Price</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">55 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="hamour-grill" data-name="Hamour Grill" data-price="55" data-category="seafood">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2: Chicken Kebab (BBQ & Kebabs) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="bbq">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/dish_charcoal_chicken_kebab_1792050379461.jpg" 
+                alt="Chicken Kebab Skewers" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Charcoal BBQ
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Chicken Kebab
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">كباب دجاجة</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Minced tender chicken skewers infused with saffron, onion juice, garlic toum, and sumac.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Portion: 2 Sticks</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">20 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="chicken-kebab" data-name="Chicken Kebab (2 Sticks)" data-price="20" data-category="bbq">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 3: Mix Kebab Platter (BBQ & Kebabs) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="bbq">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/dish_charcoal_chicken_kebab_1792050379461.jpg" 
+                alt="Mix Kebab Platter" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Popular
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Mix Kebab Platter
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">كباب مشكل</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Assortment of juicy chicken kebabs, spiced mutton seekh, grilled tomatoes, and warm kubbus.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">2 Sticks / Platter</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">24 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="mix-kebab" data-name="Mix Kebab Platter" data-price="24" data-category="bbq">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 4: BBQ Chicken (Chicken Special) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="chicken">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/hero_seafood_charcoal_bbq_1792050379191.jpg" 
+                alt="Barbeque Chicken on Charcoal" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Charcoal Grill
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Barbeque Chicken
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">دجاج فحم</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Charcoal-smoked whole or half chicken with crispy spicy rub, garlic toum, and French fries.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Half 12 / Full 24</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">12 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="bbq-chicken" data-name="Barbeque Chicken (Half)" data-price="12" data-category="chicken">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 5: Beef Kizhi (Kerala Special) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="chicken">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/dish_kerala_beef_kizhi_1792050377787.jpg" 
+                alt="Authentic Kerala Beef Kizhi" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Banana Leaf Special
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Beef Kizhi
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">لحم كيزي</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Slow-roasted spicy beef wrapped with parotta in a fragrant banana leaf parcel and steamed.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Portion</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">14 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="beef-kizhi" data-name="Beef Kizhi (لحم كيزي)" data-price="14" data-category="chicken">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 6: Kothu Porotta (Chicken Special) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="chicken">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/dish_kerala_beef_kizhi_1792050377787.jpg" 
+                alt="Kothu Porotta" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Street Specialty
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Chicken Kothu Porotta
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">كوتو باروتا دجاج</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Shredded layered Malabar porotta tossed on a hot iron tawa with chicken, eggs, and gravy.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Chicken / Beef</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">12 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="kothu-porotta" data-name="Chicken Kothu Porotta" data-price="12" data-category="chicken">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 7: Prawns Masala (Seafood) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="seafood">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/hero_seafood_charcoal_bbq_1792050379191.jpg" 
+                alt="Prawns Masala Gravy" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Seafood Gravy
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Prawns Masala
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">روبيان مسالا</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Plump tiger prawns simmered in an aromatic onion, tomato, ginger-garlic and coconut gravy.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Small 15 / Large 20</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">15 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="prawns-masala" data-name="Prawns Masala" data-price="15" data-category="seafood">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 8: Fresh Karak Tea (Beverages) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="beverages">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center p-6 bg-gradient-to-br from-amber-950/40 to-slate-900">
+              <div class="w-20 h-20 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414"></path>
+                </svg>
+              </div>
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Qatar Favorite
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Authentic Karak Tea
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">شاي كرك قطري</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Traditional slow-boiled black tea with evaporated milk, cardamom pods, and saffron threads.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Hot Cup</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">2 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="karak-tea" data-name="Authentic Karak Tea" data-arabic="شاي كرك قطري" data-price="2" data-category="beverages">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 9: Mutton Seekh Kebab (BBQ & Kebabs) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="bbq">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/dish_charcoal_chicken_kebab_1792050379461.jpg" 
+                alt="Mutton Seekh Kebab on Charcoal" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Charcoal BBQ
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Mutton Kebab
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">لحم كباب</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Spiced fresh minced lamb skewers grilled over fiery charcoal with crushed coriander and herbs.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Portion: 2 Sticks</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">14 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="mutton-kebab" data-name="Mutton Kebab (2 Sticks)" data-arabic="لحم كباب" data-price="14" data-category="bbq">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 10: Charcoal Grilled Chicken Shawayeh (Chicken Special) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="chicken">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900">
+              <img 
+                src="/src/assets/images/hero_seafood_charcoal_bbq_1792050379191.jpg" 
+                alt="Rotisserie Shawayeh Chicken" 
+                class="w-full h-full object-cover food-card-img"
+                loading="lazy"
+              />
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Shawayeh
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Grilled Chicken
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">شواية دجاج</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Golden Arabian spiced rotisserie grilled chicken served with hot fresh bread, garlic dip, and pickles.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Half 12 / Full 24</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">12 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="grilled-chicken" data-name="Grilled Chicken (Half)" data-arabic="شواية دجاج" data-price="12" data-category="chicken">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 11: Hummus with Extra Virgin Olive Oil (BBQ & Kebabs) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="bbq">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center p-6 bg-gradient-to-br from-amber-950/30 to-slate-900">
+              <div class="w-20 h-20 rounded-full bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                </svg>
+              </div>
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-amber-400 border border-amber-500/30 backdrop-blur-sm">
+                Appetizer
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Creamy Hummus
+                  </h3>
+                  <span class="font-arabic text-xs text-amber-400/90">حمص بزيت الزيتون</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Silky chickpea puree blended with tahini, lemon juice, sumac, and generous virgin olive oil.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Small 6 / Med 10</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">6 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="hummus" data-name="Creamy Hummus" data-arabic="حمص" data-price="6" data-category="bbq">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 12: Fresh Mint Lemonade (Beverages) -->
+        <article class="food-card rounded-2xl overflow-hidden glass-card flex flex-col justify-between group transition-all duration-300" data-category="beverages">
+          <div>
+            <div class="relative h-48 overflow-hidden bg-slate-900 flex items-center justify-center p-6 bg-gradient-to-br from-emerald-950/40 to-slate-900">
+              <div class="w-20 h-20 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <span class="absolute top-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-emerald-400 border border-emerald-500/30 backdrop-blur-sm">
+                Chilled Fresh
+              </span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white group-hover:text-amber-400 transition-colors">
+                    Fresh Mint Lemonade
+                  </h3>
+                  <span class="font-arabic text-xs text-emerald-400/90">ليمون بالنعناع</span>
+                </div>
+              </div>
+              <p class="text-xs text-slate-400 line-clamp-2 mt-2 leading-relaxed">
+                Crisp fresh lime crushed with garden mint leaves, raw sugar, and chilled crushed ice.
+              </p>
+            </div>
+          </div>
+          
+          <div class="p-5 pt-0 flex items-center justify-between border-t border-slate-800/80 mt-2">
+            <div>
+              <span class="text-[11px] text-slate-400 block">Tall Glass</span>
+              <span class="text-lg font-bold font-display text-white tabular-nums">8 <span class="text-xs text-amber-400 font-semibold">QAR</span></span>
+            </div>
+            <button type="button" class="add-to-cart-btn px-3.5 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-slate-950 text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-1.5"
+              data-id="mint-lemonade" data-name="Fresh Mint Lemonade" data-arabic="ليمون بالنعناع" data-price="8" data-category="beverages">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+              <span>+ Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================================== -->
+    <!-- 7. STOREFRONT & LOCATION INFO SECTION                     -->
+    <!-- ========================================================== -->
+    <section id="location" class="py-16 bg-[#0a0f1d] border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          
+          <!-- Storefront Info Card -->
+          <div>
+            <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400 mb-3">
+              <span class="w-6 h-px bg-amber-500"></span>
+              <span>Visit Us in Qatar</span>
+            </div>
+            <h2 class="text-3xl font-display font-extrabold text-white mb-2">
+              Sea Shell Restaurant &middot; مطعم صدفة البحر
+            </h2>
+            <p class="text-sm text-slate-400 mb-8 leading-relaxed">
+              Serving premium seafood, authentic BBQ charcoal grills, and freshly cooked delicacies in Al Shamal, Qatar. Commercial Registration (C.R. NO): 301776.
+            </p>
+
+            <div class="space-y-4">
+              <div class="flex items-start gap-3.5 p-4 rounded-xl glass-card">
+                <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-white uppercase tracking-wider">Address</h4>
+                  <p class="text-sm text-slate-300">Al Shamal Municipality (بلدية الشمال), Qatar</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-4 rounded-xl glass-card">
+                <div class="w-9 h-9 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-white uppercase tracking-wider">Direct Order &amp; Delivery Hotline</h4>
+                  <p class="text-sm font-semibold text-emerald-400 font-display">+974 31343625 (31343625)</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-4 rounded-xl glass-card">
+                <div class="w-9 h-9 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-white uppercase tracking-wider">Opening Hours</h4>
+                  <p class="text-sm text-slate-300">Open 7 Days a Week: 11:00 AM &ndash; 1:00 AM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Storefront Photo & Direct WhatsApp Action Card -->
+          <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-950 border border-slate-800 text-center relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
+            
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-600/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 1.771.82 2.791.82 3.181 0 5.767-2.587 5.767-5.766.001-3.181-2.585-5.766-5.767-5.766zm9.969 5.766c0 5.503-4.469 9.97-9.969 9.97-1.719 0-3.34-.438-4.764-1.217l-5.267 1.381 1.405-5.132c-.896-1.503-1.374-3.232-1.374-5.002 0-5.503 4.47-9.97 9.97-9.97 5.501 0 9.969 4.467 9.969 9.97z"/>
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-display font-bold text-white mb-2">Fast WhatsApp Delivery</h3>
+            <p class="text-xs text-slate-400 max-w-sm mx-auto mb-6">
+              Send your order directly to our chef counter in Qatar. We will immediately confirm your order and delivery timing.
+            </p>
+
+            <a href="https://wa.me/97431343625?text=Hello%20Sea%20Shell%20Restaurant,%20I%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-600/20 transition-all hover:scale-[1.02] active:scale-95">
+              <span>Start WhatsApp Order Now</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- 8. SLIDE-OVER SHOPPING CART DRAWER (Full Part 2)           -->
+  <!-- ========================================================== -->
+  <aside id="cart-drawer" class="fixed inset-y-0 right-0 z-50 w-full sm:w-[420px] bg-slate-900/98 backdrop-blur-xl border-l border-slate-800 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col">
+    
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-slate-800 flex items-center justify-between bg-slate-950/70">
+      <div class="flex items-center gap-2.5">
+        <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+          </svg>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-base text-white">Your Order Summary</h3>
+          <p class="text-[11px] text-slate-400 font-arabic">سلة الطلبات · مطعم صدفة البحر</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="clear-cart-btn" class="text-[11px] text-slate-400 hover:text-red-400 transition-colors px-2 py-1 rounded hidden" title="Clear all items from cart">
+          Clear All
+        </button>
+        <button id="close-cart-btn" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" aria-label="Close Cart">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Itemized List (Populated Dynamically via JS) -->
+    <div id="cart-items-container" class="flex-grow overflow-y-auto p-4 space-y-3">
+      <!-- Empty state placeholder -->
+      <div id="cart-empty-state" class="py-16 text-center text-slate-400">
+        <div class="w-14 h-14 rounded-full bg-slate-800/80 border border-slate-700/60 flex items-center justify-center mx-auto mb-3 text-amber-500/60">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+        </div>
+        <p class="text-sm font-semibold text-slate-200">Your cart is currently empty</p>
+        <p class="text-xs text-slate-400 mt-1 max-w-[220px] mx-auto">Explore our fresh Gulf BBQ fish, kebabs, and dishes to build your feast.</p>
+        <button id="cart-browse-btn" class="mt-4 px-4 py-2 rounded-lg bg-amber-600/20 text-amber-400 border border-amber-500/30 text-xs font-semibold hover:bg-amber-600/30 transition-all">
+          Browse Digital Menu
+        </button>
+      </div>
+    </div>
+
+    <!-- Order Options & Summary -->
+    <div id="cart-summary-section" class="border-t border-slate-800 bg-slate-950/90 p-4 space-y-3.5">
+      
+      <!-- Order Type Selector -->
+      <div class="bg-slate-900 p-1 rounded-xl border border-slate-800 grid grid-cols-2 text-xs font-semibold">
+        <button type="button" id="type-delivery-btn" class="order-type-btn py-2 rounded-lg bg-amber-600 text-slate-950 shadow transition-all flex items-center justify-center gap-1.5" data-type="delivery">
+          <span>🚗 Delivery</span>
+          <span class="font-arabic text-[10px]">(توصيل)</span>
+        </button>
+        <button type="button" id="type-takeaway-btn" class="order-type-btn py-2 rounded-lg text-slate-400 hover:text-white transition-all flex items-center justify-center gap-1.5" data-type="takeaway">
+          <span>🛍️ Takeaway</span>
+          <span class="font-arabic text-[10px]">(استلام)</span>
+        </button>
+      </div>
+
+      <!-- Quick Delivery Details Input -->
+      <div class="space-y-2 text-xs">
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Customer Name</label>
+          <input type="text" id="cust-name-input" placeholder="Your Name (e.g. Abdullah / Mohammed)" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500 transition-colors" />
+        </div>
+        <div id="address-input-container">
+          <label class="block text-[11px] text-slate-400 mb-1">Delivery Address in Qatar</label>
+          <input type="text" id="cust-address-input" placeholder="Zone, Street, Building / Al Shamal, Ruwais" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500 transition-colors" />
+        </div>
+        <div>
+          <label class="block text-[11px] text-slate-400 mb-1">Special Instructions (Optional)</label>
+          <input type="text" id="cust-notes-input" placeholder="e.g. Extra garlic sauce, spicy, more bread" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-amber-500 transition-colors" />
+        </div>
+      </div>
+
+      <!-- Price Breakdown -->
+      <div class="pt-2 border-t border-slate-800/80 space-y-1.5 text-xs">
+        <div class="flex items-center justify-between text-slate-400">
+          <span>Items Subtotal:</span>
+          <span id="cart-subtotal" class="font-mono text-slate-200 tabular-nums font-semibold">0.00 QAR</span>
+        </div>
+        <div class="flex items-center justify-between text-slate-400">
+          <span id="delivery-label">Delivery (Al Shamal):</span>
+          <span id="cart-delivery-fee" class="font-mono text-emerald-400 tabular-nums font-semibold">FREE</span>
+        </div>
+        <div class="flex items-center justify-between pt-1 border-t border-slate-800 text-sm font-bold text-white">
+          <span>Total Order:</span>
+          <span id="cart-total" class="font-display font-extrabold text-xl text-amber-400 tabular-nums">0.00 QAR</span>
+        </div>
+      </div>
+      
+      <!-- Primary WhatsApp Checkout Button -->
+      <button id="checkout-btn" type="button" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white font-bold text-sm shadow-xl shadow-emerald-600/25 transition-all flex items-center justify-center gap-2 group">
+        <svg class="w-5 h-5 text-white group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.53 1.771.82 2.791.82 3.181 0 5.767-2.587 5.767-5.766.001-3.181-2.585-5.766-5.767-5.766zm9.969 5.766c0 5.503-4.469 9.97-9.969 9.97-1.719 0-3.34-.438-4.764-1.217l-5.267 1.381 1.405-5.132c-.896-1.503-1.374-3.232-1.374-5.002 0-5.503 4.47-9.97 9.97-9.97 5.501 0 9.969 4.467 9.969 9.97z"/>
+        </svg>
+        <span>Send Order via WhatsApp (+974 31343625)</span>
+      </button>
+
+      <p class="text-[10px] text-center text-slate-500">
+        Direct confirmation from restaurant kitchen &bull; Cash or Card on Delivery
+      </p>
+
+    </div>
+
+  </aside>
+
+  <!-- Cart Backdrop Overlay -->
+  <div id="cart-backdrop" class="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm hidden transition-opacity duration-300"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- Floating Mobile Quick Order Bar (Mobile only) -->
+  <div id="mobile-cart-bar" class="fixed bottom-4 left-4 right-4 z-40 md:hidden hidden transition-all duration-300">
+    <button id="mobile-cart-bar-btn" type="button" class="w-full py-3 px-4 rounded-xl bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold text-sm shadow-2xl flex items-center justify-between border border-amber-400/40 active:scale-95 transition-transform">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+        <span id="mobile-cart-items-count" class="font-extrabold tabular-nums">0 items</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span id="mobile-cart-total-price" class="tabular-nums font-mono font-bold">0 QAR</span>
+        <span class="text-xs bg-slate-950 text-amber-400 px-2 py-0.5 rounded font-bold">View Cart &rarr;</span>
+      </div>
+    </button>
+  </div>
+
+  <!-- ========================================================== -->
+  <!-- 9. FOOTER                                                  -->
+  <!-- ========================================================== -->
+  <footer id="contact" class="bg-[#070b14] border-t border-slate-800/80 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-slate-900 border border-amber-500/50 flex items-center justify-center text-amber-500">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.6 8.4.4.3.9.5 1.4.5h8c.5 0 1-.2 1.4-.5 2.8-1.8 4.6-4.9 4.6-8.4 0-5.5-4.5-10-10-10z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="font-display font-bold text-white text-sm">SEA SHELL RESTAURANT</span>
+          <p class="font-arabic text-[11px] text-slate-500">مطعم صدفة البحر &middot; بلدية الشمال، قطر</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-6 text-slate-400">
+        <a href="#hero" class="hover:text-amber-400 transition-colors">Home</a>
+        <a href="#special-bbq" class="hover:text-amber-400 transition-colors">Special BBQ</a>
+        <a href="#menu-section" class="hover:text-amber-400 transition-colors">Menu</a>
+        <a href="#location" class="hover:text-amber-400 transition-colors">Location</a>
+      </div>
+
+      <div class="text-center md:text-right text-slate-500 text-[11px]">
+        <p>&copy; 2026 Sea Shell Restaurant. All rights reserved.</p>
+        <p class="mt-0.5">Commercial Registration No: 301776 &middot; Qatar</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================== -->
+  <!-- 10. JAVASCRIPT: PART 2 INTERACTIVE CART & WHATSAPP LOGIC   -->
+  <!-- ========================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // -------------------------------------------------------------
+      // 1. STATE INITIALIZATION & LOCALSTORAGE PERSISTENCE
+      // -------------------------------------------------------------
+      const RESTAURANT_PHONE = '97431343625'; // Storefront number from photos (+974 31343625)
+      const STORAGE_KEY = 'seashell_restaurant_cart_v2';
+      
+      let cart = [];
+      let orderType = 'delivery'; // 'delivery' or 'takeaway'
+
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) {
+          cart = JSON.parse(stored);
+        }
+      } catch (e) {
+        console.error('Failed to parse cart storage', e);
+        cart = [];
+      }
+
+      // DOM Elements
+      const cartToggleBtn = document.getElementById('cart-toggle-btn');
+      const closeCartBtn = document.getElementById('close-cart-btn');
+      const cartDrawer = document.getElementById('cart-drawer');
+      const cartBackdrop = document.getElementById('cart-backdrop');
+      const cartItemsContainer = document.getElementById('cart-items-container');
+      const cartCounter = document.getElementById('cart-counter');
+      const cartSubtotal = document.getElementById('cart-subtotal');
+      const cartTotal = document.getElementById('cart-total');
+      const clearCartBtn = document.getElementById('clear-cart-btn');
+      const cartBrowseBtn = document.getElementById('cart-browse-btn');
+      const checkoutBtn = document.getElementById('checkout-btn');
+
+      // Order Type Elements
+      const typeDeliveryBtn = document.getElementById('type-delivery-btn');
+      const typeTakeawayBtn = document.getElementById('type-takeaway-btn');
+      const addressContainer = document.getElementById('address-input-container');
+      const deliveryLabel = document.getElementById('delivery-label');
+      const custNameInput = document.getElementById('cust-name-input');
+      const custAddressInput = document.getElementById('cust-address-input');
+      const custNotesInput = document.getElementById('cust-notes-input');
+
+      // Mobile Quick Cart Bar
+      const mobileCartBar = document.getElementById('mobile-cart-bar');
+      const mobileCartBarBtn = document.getElementById('mobile-cart-bar-btn');
+      const mobileCartCount = document.getElementById('mobile-cart-items-count');
+      const mobileCartPrice = document.getElementById('mobile-cart-total-price');
+
+      // -------------------------------------------------------------
+      // 2. DRAWER OPEN / CLOSE CONTROLS
+      // -------------------------------------------------------------
+      function openCart() {
+        cartDrawer.classList.remove('translate-x-full');
+        cartBackdrop.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      }
+
+      function closeCart() {
+        cartDrawer.classList.add('translate-x-full');
+        cartBackdrop.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      if (cartToggleBtn) cartToggleBtn.addEventListener('click', openCart);
+      if (closeCartBtn) closeCartBtn.addEventListener('click', closeCart);
+      if (cartBackdrop) cartBackdrop.addEventListener('click', closeCart);
+      if (mobileCartBarBtn) mobileCartBarBtn.addEventListener('click', openCart);
+      if (cartBrowseBtn) {
+        cartBrowseBtn.addEventListener('click', () => {
+          closeCart();
+          const menuElem = document.getElementById('menu-section');
+          if (menuElem) menuElem.scrollIntoView({ behavior: 'smooth' });
+        });
+      }
+
+      // Close cart on ESC key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeCart();
+      });
+
+      // -------------------------------------------------------------
+      // 3. TOAST NOTIFICATION SYSTEM
+      // -------------------------------------------------------------
+      function showToast(title, subtitle = '') {
+        const container = document.getElementById('toast-container');
+        if (!container) return;
+
+        const toast = document.createElement('div');
+        toast.className = 'pointer-events-auto flex items-center justify-between gap-3 px-4 py-3 rounded-xl bg-slate-900/95 border border-amber-500/30 text-white shadow-2xl shadow-black/80 backdrop-blur-md transform translate-y-4 opacity-0 transition-all duration-300 max-w-sm';
+        
+        toast.innerHTML = `
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-white">${title}</p>
+              ${subtitle ? `<p class="text-[11px] text-amber-400/90 font-medium">${subtitle}</p>` : ''}
+            </div>
+          </div>
+          <button class="toast-view-btn text-xs font-semibold text-amber-400 hover:text-amber-300 shrink-0 px-2 py-1 rounded bg-slate-800">
+            Cart &rarr;
+          </button>
+        `;
+
+        toast.querySelector('.toast-view-btn').addEventListener('click', () => {
+          openCart();
+          toast.remove();
+        });
+
+        container.appendChild(toast);
+
+        // Slide in
+        requestAnimationFrame(() => {
+          toast.classList.remove('translate-y-4', 'opacity-0');
+        });
+
+        // Auto remove
+        setTimeout(() => {
+          toast.classList.add('opacity-0', 'translate-y-4');
+          setTimeout(() => toast.remove(), 300);
+        }, 3200);
+      }
+
+      // -------------------------------------------------------------
+      // 4. CART MUTATION FUNCTIONS
+      // -------------------------------------------------------------
+      function saveCart() {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
+        } catch (e) {
+          console.error('Storage error', e);
+        }
+        renderCart();
+      }
+
+      function addToCart(item) {
+        const existingIndex = cart.findIndex(c => c.id === item.id);
+        if (existingIndex > -1) {
+          cart[existingIndex].quantity += 1;
+        } else {
+          cart.push({
+            id: item.id,
+            name: item.name,
+            arabicName: item.arabic || '',
+            price: parseFloat(item.price),
+            quantity: 1,
+            category: item.category || 'Special'
+          });
+        }
+        saveCart();
+
+        // Animate Cart Badge
+        if (cartCounter) {
+          cartCounter.classList.add('scale-125', 'bg-amber-400');
+          setTimeout(() => {
+            cartCounter.classList.remove('scale-125', 'bg-amber-400');
+          }, 250);
+        }
+
+        showToast(`${item.name} added`, `${item.price} QAR`);
+      }
+
+      function updateQuantity(id, change) {
+        const index = cart.findIndex(c => c.id === id);
+        if (index === -1) return;
+
+        cart[index].quantity += change;
+        if (cart[index].quantity <= 0) {
+          cart.splice(index, 1);
+        }
+        saveCart();
+      }
+
+      function removeItem(id) {
+        cart = cart.filter(c => c.id !== id);
+        saveCart();
+      }
+
+      if (clearCartBtn) {
+        clearCartBtn.addEventListener('click', () => {
+          if (confirm('Are you sure you want to clear your current order?')) {
+            cart = [];
+            saveCart();
+          }
+        });
+      }
+
+      // -------------------------------------------------------------
+      // 5. RENDER CART DRAWER
+      // -------------------------------------------------------------
+      function renderCart() {
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+        // Update Counter Badges
+        if (cartCounter) cartCounter.textContent = totalItems;
+        if (mobileCartCount) mobileCartCount.textContent = `${totalItems} item${totalItems === 1 ? '' : 's'}`;
+        if (mobileCartPrice) mobileCartPrice.textContent = `${subtotal.toFixed(0)} QAR`;
+
+        // Mobile Bar Visibility
+        if (mobileCartBar) {
+          if (totalItems > 0) {
+            mobileCartBar.classList.remove('hidden');
+          } else {
+            mobileCartBar.classList.add('hidden');
+          }
+        }
+
+        // Clear button visibility
+        if (clearCartBtn) {
+          if (totalItems > 0) {
+            clearCartBtn.classList.remove('hidden');
+          } else {
+            clearCartBtn.classList.add('hidden');
+          }
+        }
+
+        // Update Totals
+        if (cartSubtotal) cartSubtotal.textContent = `${subtotal.toFixed(2)} QAR`;
+        if (cartTotal) cartTotal.textContent = `${subtotal.toFixed(2)} QAR`;
+
+        // Handle Empty State vs Items List
+        if (cart.length === 0) {
+          cartItemsContainer.innerHTML = `
+            <div id="cart-empty-state" class="py-16 text-center text-slate-400">
+              <div class="w-14 h-14 rounded-full bg-slate-800/80 border border-slate-700/60 flex items-center justify-center mx-auto mb-3 text-amber-500/60">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+              </div>
+              <p class="text-sm font-semibold text-slate-200">Your cart is currently empty</p>
+              <p class="text-xs text-slate-400 mt-1 max-w-[220px] mx-auto">Explore our fresh Gulf BBQ fish, kebabs, and dishes to build your feast.</p>
+              <button id="cart-browse-btn" class="mt-4 px-4 py-2 rounded-lg bg-amber-600/20 text-amber-400 border border-amber-500/30 text-xs font-semibold hover:bg-amber-600/30 transition-all">
+                Browse Digital Menu
+              </button>
+            </div>
+          `;
+          const browseBtn = document.getElementById('cart-browse-btn');
+          if (browseBtn) {
+            browseBtn.addEventListener('click', () => {
+              closeCart();
+              const menuElem = document.getElementById('menu-section');
+              if (menuElem) menuElem.scrollIntoView({ behavior: 'smooth' });
+            });
+          }
+          return;
+        }
+
+        // Render Item Cards
+        cartItemsContainer.innerHTML = '';
+        cart.forEach(item => {
+          const itemTotal = (item.price * item.quantity).toFixed(0);
+          const itemCard = document.createElement('div');
+          itemCard.className = 'p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between gap-3 hover:border-slate-700 transition-colors';
+          
+          itemCard.innerHTML = `
+            <div class="flex-grow min-w-0">
+              <div class="flex items-center gap-1.5 flex-wrap">
+                <h4 class="font-display font-bold text-sm text-white truncate">${item.name}</h4>
+                ${item.arabicName ? `<span class="font-arabic text-[11px] text-amber-400/80">${item.arabicName}</span>` : ''}
+              </div>
+              <div class="flex items-center gap-2 mt-1 text-xs text-slate-400">
+                <span class="font-mono text-slate-300 font-semibold">${item.price} QAR</span>
+                <span>&times;</span>
+                <span class="font-mono text-amber-400 font-bold">${item.quantity}</span>
+                <span>=</span>
+                <span class="font-mono font-bold text-white">${itemTotal} QAR</span>
+              </div>
+            </div>
+
+            <!-- Stepper Controls & Delete -->
+            <div class="flex items-center gap-2 shrink-0">
+              <div class="flex items-center bg-slate-950 rounded-lg border border-slate-800 p-0.5">
+                <button type="button" class="qty-btn-minus w-7 h-7 rounded flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-800 active:scale-90 transition-all" data-id="${item.id}" title="Decrease quantity">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path></svg>
+                </button>
+                <span class="w-7 text-center font-mono text-xs font-bold text-white tabular-nums">${item.quantity}</span>
+                <button type="button" class="qty-btn-plus w-7 h-7 rounded flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-800 active:scale-90 transition-all" data-id="${item.id}" title="Increase quantity">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                </button>
+              </div>
+
+              <button type="button" class="item-remove-btn p-1.5 text-slate-500 hover:text-red-400 hover:bg-slate-800/80 rounded-lg transition-colors" data-id="${item.id}" title="Remove item">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+              </button>
+            </div>
+          `;
+
+          cartItemsContainer.appendChild(itemCard);
+        });
+
+        // Wire Stepper & Remove Buttons inside container
+        cartItemsContainer.querySelectorAll('.qty-btn-minus').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-id');
+            updateQuantity(id, -1);
+          });
+        });
+
+        cartItemsContainer.querySelectorAll('.qty-btn-plus').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-id');
+            updateQuantity(id, 1);
+          });
+        });
+
+        cartItemsContainer.querySelectorAll('.item-remove-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-id');
+            removeItem(id);
+          });
+        });
+      }
+
+      // -------------------------------------------------------------
+      // 6. ORDER TYPE TOGGLE (Delivery vs Takeaway)
+      // -------------------------------------------------------------
+      function setOrderType(type) {
+        orderType = type;
+        if (type === 'delivery') {
+          typeDeliveryBtn.classList.add('bg-amber-600', 'text-slate-950', 'shadow');
+          typeDeliveryBtn.classList.remove('text-slate-400');
+          typeTakeawayBtn.classList.remove('bg-amber-600', 'text-slate-950', 'shadow');
+          typeTakeawayBtn.classList.add('text-slate-400');
+          if (addressContainer) addressContainer.style.display = 'block';
+          if (deliveryLabel) deliveryLabel.textContent = 'Delivery (Al Shamal):';
+        } else {
+          typeTakeawayBtn.classList.add('bg-amber-600', 'text-slate-950', 'shadow');
+          typeTakeawayBtn.classList.remove('text-slate-400');
+          typeDeliveryBtn.classList.remove('bg-amber-600', 'text-slate-950', 'shadow');
+          typeDeliveryBtn.classList.add('text-slate-400');
+          if (addressContainer) addressContainer.style.display = 'none';
+          if (deliveryLabel) deliveryLabel.textContent = 'Takeaway Pickup:';
+        }
+      }
+
+      if (typeDeliveryBtn) typeDeliveryBtn.addEventListener('click', () => setOrderType('delivery'));
+      if (typeTakeawayBtn) typeTakeawayBtn.addEventListener('click', () => setOrderType('takeaway'));
+
+      // -------------------------------------------------------------
+      // 7. EVENT DELEGATION: ADD TO CART CLICKS
+      // -------------------------------------------------------------
+      document.addEventListener('click', (e) => {
+        const addBtn = e.target.closest('.add-to-cart-btn, .add-to-cart-quick');
+        if (!addBtn) return;
+
+        const id = addBtn.getAttribute('data-id');
+        const name = addBtn.getAttribute('data-name');
+        const price = addBtn.getAttribute('data-price');
+        const arabic = addBtn.getAttribute('data-arabic') || '';
+        const category = addBtn.getAttribute('data-category') || '';
+
+        if (!id || !name || !price) return;
+
+        // Visual feedback on clicked button
+        const originalHtml = addBtn.innerHTML;
+        addBtn.classList.add('bg-emerald-600', 'text-white');
+        addBtn.innerHTML = `<span>✓ Added</span>`;
+        setTimeout(() => {
+          addBtn.classList.remove('bg-emerald-600', 'text-white');
+          addBtn.innerHTML = originalHtml;
+        }, 800);
+
+        addToCart({ id, name, price, arabic, category });
+      });
+
+      // -------------------------------------------------------------
+      // 8. DIRECT WHATSAPP ORDER GENERATOR
+      // -------------------------------------------------------------
+      if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', () => {
+          if (cart.length === 0) {
+            showToast('Your cart is empty', 'Add some delicious dishes first');
+            return;
+          }
+
+          const customerName = custNameInput ? custNameInput.value.trim() : '';
+          const address = custAddressInput ? custAddressInput.value.trim() : '';
+          const notes = custNotesInput ? custNotesInput.value.trim() : '';
+
+          if (orderType === 'delivery' && !address) {
+            custAddressInput.focus();
+            custAddressInput.classList.add('border-red-500', 'ring-1', 'ring-red-500');
+            showToast('Address needed for delivery', 'Please enter your street or area');
+            setTimeout(() => {
+              custAddressInput.classList.remove('border-red-500', 'ring-1', 'ring-red-500');
+            }, 3000);
+            return;
+          }
+
+          const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+          const orderTypeArabic = orderType === 'delivery' ? 'توصيل للمنزل' : 'استلام من المطعم';
+          const orderTypeEnglish = orderType === 'delivery' ? 'Home Delivery' : 'Takeaway Pickup';
+
+          // Format WhatsApp message with rich readable structure
+          let msg = `🌊 *SEA SHELL RESTAURANT (مطعم صدفة البحر)* 🦐\n`;
+          msg += `📍 Al Shamal Municipality, Qatar\n`;
+          msg += `📞 Hotline: +974 ${RESTAURANT_PHONE}\n`;
+          msg += `─────────────────────────\n`;
+          msg += `📋 *ORDER TYPE:* ${orderTypeEnglish} (${orderTypeArabic})\n`;
+          if (customerName) {
+            msg += `👤 *Customer Name:* ${customerName}\n`;
+          }
+          if (orderType === 'delivery' && address) {
+            msg += `🏡 *Delivery Address:* ${address}\n`;
+          }
+          if (notes) {
+            msg += `📝 *Special Request:* ${notes}\n`;
+          }
+          msg += `─────────────────────────\n`;
+          msg += `🍽️ *ITEMS ORDERED:*\n`;
+          
+          cart.forEach(item => {
+            const itemTotal = (item.price * item.quantity).toFixed(0);
+            msg += `• ${item.quantity}x ${item.name} ${item.arabicName ? `(${item.arabicName})` : ''} - *${itemTotal} QAR*\n`;
+          });
+
+          msg += `─────────────────────────\n`;
+          msg += `💰 *TOTAL AMOUNT: ${totalAmount.toFixed(0)} QAR*\n`;
+          msg += `─────────────────────────\n`;
+          msg += `Please confirm my order and share the preparation / delivery time. Shukran!`;
+
+          const waUrl = `https://wa.me/${RESTAURANT_PHONE}?text=${encodeURIComponent(msg)}`;
+          
+          // Open WhatsApp link
+          window.open(waUrl, '_blank');
+          showToast('Order dispatched to WhatsApp!', 'Connecting to Sea Shell kitchen');
+        });
+      }
+
+      // -------------------------------------------------------------
+      // 9. CATEGORY FILTER BUTTONS
+      // -------------------------------------------------------------
+      const categoryButtons = document.querySelectorAll('.category-btn');
+      const cards = document.querySelectorAll('#dishes-grid article');
+
+      categoryButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          categoryButtons.forEach(b => {
+            b.classList.remove('bg-amber-600', 'text-slate-950', 'shadow-md');
+            b.classList.add('text-slate-400', 'hover:text-white', 'hover:bg-slate-800');
+          });
+          btn.classList.add('bg-amber-600', 'text-slate-950', 'shadow-md');
+          btn.classList.remove('text-slate-400', 'hover:text-white', 'hover:bg-slate-800');
+
+          const targetCategory = btn.getAttribute('data-category');
+          cards.forEach(card => {
+            if (targetCategory === 'all' || card.getAttribute('data-category') === targetCategory) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // -------------------------------------------------------------
+      // 10. MOBILE NAV TOGGLE
+      // -------------------------------------------------------------
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileNav = document.getElementById('mobile-nav-panel');
+      if (mobileBtn && mobileNav) {
+        mobileBtn.addEventListener('click', () => {
+          mobileNav.classList.toggle('hidden');
+        });
+        mobileNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileNav.classList.add('hidden');
+          });
+        });
+      }
+
+      // Initial Cart Render on page load
+      renderCart();
+    });
+  </script>
+
+</body>
+</html>
+

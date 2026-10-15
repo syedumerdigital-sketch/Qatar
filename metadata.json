@@ -1,0 +1,6 @@
+{
+  "name": "Sea Shell Restaurant Qatar",
+  "description": "Authentic Qatar Seafood, BBQ Fish, Charcoal Grills & Kerala Specialties with digital menu, QAR pricing, and WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
